@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.HelperAccountUi.SignupHelperActivity">
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.33"
+        android:src="@drawable/help_me_app_splash_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/bungee_regular"
+        android:gravity="center"
+        android:text="Help me app"
+        android:textAllCaps="true"
+        android:textColor="@color/red"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee_regular"
+        android:gravity="center"
+        android:text="Helper"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <EditText
+            android:id="@+id/edt_location_signup_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/light_yellow_box"
+            android:ems="14"
+            android:fontFamily="@font/bungee_regular"
+            android:gravity="center"
+            android:hint="get location"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAllCaps="true"
+            android:textColorHint="@color/red" />
+
+        <EditText
+            android:id="@+id/edt_name_signup_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/light_yellow_box"
+            android:ems="14"
+            android:fontFamily="@font/bungee_regular"
+            android:gravity="center"
+            android:hint="Full name"
+            android:inputType="textPersonName"
+            android:textAllCaps="true"
+            android:textColorHint="@color/red" />
+
+        <EditText
+            android:id="@+id/edt_email_signup_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/light_yellow_box"
+            android:ems="14"
+            android:fontFamily="@font/bungee_regular"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textAllCaps="true"
+            android:textColorHint="@color/red" />
+
+        <EditText
+            android:id="@+id/edt_password_signup_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/light_yellow_box"
+            android:ems="14"
+            android:fontFamily="@font/bungee_regular"
+            android:gravity="center"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textAllCaps="true"
+            android:textColorHint="@color/red" />
+
+        <EditText
+            android:id="@+id/edt_typeExperience_signup_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/light_yellow_box"
+            android:ems="14"
+            android:fontFamily="@font/bungee_regular"
+            android:gravity="center"
+            android:hint="Type of experience"
+            android:inputType="text"
+            android:textAllCaps="true"
+            android:textColorHint="@color/red" />
+
+        <EditText
+            android:id="@+id/edt_levelOfExperience_signup_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/light_yellow_box"
+            android:ems="14"
+            android:fontFamily="@font/bungee_regular"
+            android:gravity="center"
+            android:hint="level of experience"
+            android:inputType="text"
+            android:textAllCaps="true"
+            android:textColorHint="@color/red" />
+
+
+
+        <EditText
+            android:id="@+id/edt_phoneNumber_signup_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/light_yellow_box"
+            android:ems="14"
+            android:fontFamily="@font/bungee_regular"
+            android:gravity="center"
+            android:hint="phone number"
+            android:inputType="phone"
+            android:textAllCaps="true"
+            android:textColorHint="@color/red" />
+
+        <ProgressBar
+            android:id="@+id/progressBarHelper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+
+            />
+
+
+        <TextView
+            android:id="@+id/btnSignupHelper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="#8F000000"
+            android:fontFamily="@font/bungee_regular"
+            android:gravity="center"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="sign up"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

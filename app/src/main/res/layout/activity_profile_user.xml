@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.UserAccountUi.ProfileUserActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/btnOpenMenu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/menu_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/bungee_regular"
+            android:gravity="center"
+            android:text="Profile"
+            android:textAllCaps="true"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <EditText
+                android:id="@+id/edt_name_profile_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/light_yellow_box"
+                android:ems="14"
+                android:fontFamily="@font/bungee_regular"
+                android:gravity="center"
+                android:hint="Full name"
+                android:inputType="textPersonName"
+                android:textAllCaps="true"
+                android:textColorHint="@color/red" />
+
+            <EditText
+                android:id="@+id/edt_email_profile_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_yellow_box"
+                android:ems="14"
+                android:fontFamily="@font/bungee_regular"
+                android:gravity="center"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textAllCaps="true"
+                android:textColorHint="@color/red" />
+
+
+            <EditText
+                android:id="@+id/edt_carType_profile_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_yellow_box"
+                android:ems="14"
+                android:fontFamily="@font/bungee_regular"
+                android:gravity="center"
+                android:hint="car type"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:textColorHint="@color/red" />
+
+            <EditText
+                android:id="@+id/edt_carColor_profile_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_yellow_box"
+                android:ems="14"
+                android:fontFamily="@font/bungee_regular"
+                android:gravity="center"
+                android:hint="car color"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:textColorHint="@color/red" />
+
+            <EditText
+                android:id="@+id/edt_carModel_profile_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_yellow_box"
+                android:ems="14"
+                android:fontFamily="@font/bungee_regular"
+                android:gravity="center"
+                android:hint="car model"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:textColorHint="@color/red" />
+
+            <EditText
+                android:id="@+id/edt_phoneNumber_profile_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_yellow_box"
+                android:ems="14"
+                android:fontFamily="@font/bungee_regular"
+                android:gravity="center"
+                android:hint="phone number"
+                android:inputType="phone"
+                android:textAllCaps="true"
+                android:textColorHint="@color/red" />
+
+
+
+            <TextView
+                android:id="@+id/btnEditProfileUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:background="#8F000000"
+                android:fontFamily="@font/bungee_regular"
+                android:gravity="center"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="Edit"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="27sp" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/menu_background"
+        android:paddingTop="50dp"
+        app:itemHorizontalPadding="20dp"
+        app:itemTextAppearance="@style/textOnNavView"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
